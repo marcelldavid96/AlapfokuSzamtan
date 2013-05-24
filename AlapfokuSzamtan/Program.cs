@@ -23,9 +23,10 @@ namespace AlapfokuSzamtan
             double masodikSzam = double.Parse(Console.ReadLine());
             Console.WriteLine("Válaszd meg az elvégzendő műveletet! (+, -, *, /)");
             string muveletiJel = Console.ReadLine();
+
+
             if (muveletiJel.ElementAt(0) == '+')
             {
-                // ez akkor fut le, ha a megadott műveleti jel a '+'
                 Console.WriteLine(elsoSzam + masodikSzam);
             }
             if (muveletiJel.ElementAt(0) == '-')
@@ -43,29 +44,30 @@ namespace AlapfokuSzamtan
             Console.ReadLine();
             #endregion
 
-            /* = : értékadás:           int valtozo = 2; (a valtozo legyen egyenlő kettővel)
-             * == : összehasonlítás:    valtozo1 == valtozo2 (valtozo1 egyenlő -e valtozo2-vel => vagy IGEN, vagy NEM (if))
-             * 
-             * "If" minta (feltételes elágazás)
-             * 
+
+            /* = : értékadás: int valtozo = 2; (a valtozo legyen egyenlő kettővel)
+             * == : összehasonlítás: valtozo1 == valtozo2 (valtozo1 egyenlő -e valtozo2-vel => vagy IGEN, vagy NEM (if))
              * Ha az feltétel értéke igaz, akkor a küvetkező blokkban levő utasításokat hajtja végre.
              * Ha hamis, akkor a különben (else) blokkra ugrik.
              * Ilyen az if blokk utasításai nem hajtódnak végre.
              * Mert a feltétel vagy IGAZ VAGY HAMIS (true or false)!
-             * 
-             * <code>
-             * if (feltétel)
+             */
+
+
+            /* if (feltétel)
              * {
              *     utasítás1;
              *     utasítás2;
              * }
-             * else
+             * else (különben)
              * {
              *      utasítás3;
              *      utasítás4;
              * }
-             * </code>
+             *
+             * Ha (if) feltétel igaz, akkor (első blokk), különben (else) blokk hajtódik végre.
              */
+
 
         }
     }
